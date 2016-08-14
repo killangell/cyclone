@@ -1,0 +1,8 @@
+---- w Matches (7 in 5 files) ----
+Debug.py (\\vmware-host\shared folders\d\work\ostf\cyclone\src\core\lib):	def w(self, text):
+Debug.py (\\vmware-host\shared folders\d\work\ostf\cyclone\src\core\lib):	inst.w("Debug test output")
+__init__.py (\\vmware-host\shared folders\d\work\ostf\cyclone\src\core):	inst.w("Class Debug test output")
+__init__.py (\\vmware-host\shared folders\d\work\ostf\cyclone\src\core\lib):	inst.w("Class Debug test output")
+Test_case_xml.py (\\vmware-host\shared folders\d\work\ostf\cyclone\src\model):		dbg.w ("TestCaseXml = %s"%(xml_path))
+Test_case_xml.py (\\vmware-host\shared folders\d\work\ostf\cyclone\src\model):		dbg.w ("%s" % (self.show_test_cases.__name__))
+Ut_test_case_xml.py (\\vmware-host\shared folders\d\work\ostf\cyclone\src\unit_test):		dbg.w ("%s" % (self.test_show_test_cases.__name__))

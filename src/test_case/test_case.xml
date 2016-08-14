@@ -1,0 +1,39 @@
+<?xml   version="1.0"   encoding="utf-8"?>
+<test_case>
+	<object>
+		<name>bios</name>
+		<items>			
+		</items>
+	<object>	
+	<object>
+		<name>bmc</name>
+		<items>			
+		</items>
+	<object>
+	<object>
+		<name>os</name>
+		<items>		
+			<item>
+				<name>512E HDD Check</name>
+				<path>os\vmware\common\512E HDD Check</path>
+			</item>		
+			<item>
+				<name>LogCheck</name>
+				<path>os\vmware\common\LogCheck</path>
+			</item>		
+			<item>
+				<name>PCIID</name>
+				<path>os\vmware\common\PCIID</path>
+			</item>		
+			<item>
+				<name>Secure Boot</name>
+				<path>os\vmware\common\Secure Boot</path>
+			</item>
+		</items>
+	<object>
+	<object>
+		<name>solution</name>
+		<items>			
+		</items>
+	<object>	
+</test_case>

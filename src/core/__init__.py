@@ -2,18 +2,20 @@ import sys
 import os
 
 cur_dir = os.path.split(os.path.realpath(__file__))[0]
-print(sys.path)
+#print(sys.path)
 #sys.path.append(cur_dir)	
 sys.path.insert(0, cur_dir)	
-print(sys.path)
+#print(sys.path)
 
-from debug import *
+#from lib import *
+import lib
 
-__all__ = ['debug']
+__all__ = ['lib']
 
+d = lib.debug.Debug(3)
 
-d = Debug(3)
 
 if __name__ == '__main__':
-	inst = Debug(3)
+	inst = lib.debug.Debug(3)
 	inst.w("Class Debug test output")
+	

@@ -1,0 +1,7 @@
+<config>
+	<start_script>start.sh</start_script>
+	<param>null</param>
+	<dir>/</dir>
+	<result>result</result> <!--0:success 1:totally failed 2:partial failed-->
+	<download>file1</download>
+</config>
