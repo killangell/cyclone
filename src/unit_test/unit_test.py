@@ -12,7 +12,7 @@ class UnitTest():
 	def __init__(self):  
 		pass
 		
-	def run_test(self):
+	def unit_test_entry(self):
 		ret = test_ut_test_case_xml()
 		assert ret == 0
 		

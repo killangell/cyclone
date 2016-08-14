@@ -17,5 +17,5 @@ d = lib.debug.Debug(3)
 
 if __name__ == '__main__':
 	inst = lib.debug.Debug(3)
-	inst.w("Class Debug test output")
+	inst.print_ln("Class Debug test output")
 	
