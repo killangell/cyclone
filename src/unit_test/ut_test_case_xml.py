@@ -10,7 +10,8 @@ class UT_TestCaseXml():
 
 	def __init__(self):  
 		cur_path = os.path.split(os.path.realpath(__file__))[0]
-		self.xml = model.test_case_xml.TestCaseXml(cur_path + '\ut_test_case.xml')
+		self.xml = model.test_case_xml.TestCaseXml(
+			cur_path + '\ut_test_case.xml')
 
 	def set_up():
 		pass

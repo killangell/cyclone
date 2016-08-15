@@ -1,7 +1,6 @@
-import core
-from core.lib.debug import *
+from core.lib.debug import Debug,LEVEL
 
-dbg = core.lib.debug.Debug()
+dbg = Debug()
 
 import  xml.dom.minidom
 
