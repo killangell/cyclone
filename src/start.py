@@ -3,7 +3,7 @@
 import core
 import unit_test
 
-dbg = core.lib.debug.Debug(2)
+dbg = core.lib.debug.Debug()
 
 unit_test_obj = unit_test.unit_test.UnitTest()
 unit_test_obj.unit_test_entry()
