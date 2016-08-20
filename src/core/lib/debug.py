@@ -8,7 +8,6 @@ class Debug():
 	
 	def __init__(self):  
 		self.level = LEVEL.INFO
-		print ("Debug initial level=%d"%(self.level))
 
 	def set_debug_level(self, level):
 		self.level = level
@@ -20,7 +19,32 @@ class Debug():
 	def print_ln(self, level, text):
 		if level >= self.level:
 			print(text)
-		
+
+g_dbg = Debug()
+
+def INFO(text):
+	g_dbg.print_ln(LEVEL.INFO, text)
+	
+
+def WARN(text):
+	g_dbg.print_ln(LEVEL.WARNING, text)
+	
+def ERROR(text):
+	g_dbg.print_ln(LEVEL.ERROR, text)
+	
+def FATAL(text):
+	g_dbg.print_ln(LEVEL.FATAL, text)
+	
+def SET_LEVEL(level):
+	g_dbg.set_debug_level(level)	
+	
+def GET_LEVEL():
+	return g_dbg.get_debug_level()
+	
+def SHOW_LEVEL():
+	level = GET_LEVEL()
+	print ("Current level=%d"%(level))
+	
 if __name__ == '__main__':
 	inst = Debug()
 	inst.print_ln(LEVEL.INFO, "Debug test output")

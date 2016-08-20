@@ -1,18 +1,15 @@
-import core
-import model
 import os
 
+from core.public import *
 from core.lib.debug import *
-
-dbg = core.lib.debug.Debug()
+from model.test_case_xml import TestCaseXml
 
 class UT_TestCaseXml():  
 
 	def __init__(self):  
 		cur_path = os.path.split(os.path.realpath(__file__))[0]
-		self.xml = model.test_case_xml.TestCaseXml(
-			cur_path + '\ut_test_case.xml')
-
+		self.xml = TestCaseXml(cur_path + '\ut_test_case.xml')
+		
 	def set_up():
 		pass
 
@@ -20,8 +17,11 @@ class UT_TestCaseXml():
 		pass
 		
 	def test_show_test_cases(self):
-		ret = 0
-		dbg.print_ln(LEVEL.INFO, "%s" % (self.test_show_test_cases.__name__))
+		INFO("test_show_test_cases")		
 		self.xml.show_test_cases()
-		return ret
+		return TRUE
+
+	def test_all(self):
+		INFO("test_all")
+		assert(TRUE == self.test_show_test_cases())
 		

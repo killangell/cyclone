@@ -1,7 +1,7 @@
 <testcase>
 	<object>
 		<name>bios</name>
-		<items>			
+		<items>		
 		</items>
 	</object>	
 	<object>
@@ -32,7 +32,7 @@
 	</object>
 	<object>
 		<name>solution</name>
-		<items>			
+		<items>		
 		</items>
 	</object>	
 </testcase>

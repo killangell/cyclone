@@ -3,10 +3,16 @@
 import core
 import unit_test
 
-dbg = core.lib.debug.Debug()
+from core.lib.debug import *
+from unit_test.unit_test import UnitTest
 
-unit_test_obj = unit_test.unit_test.UnitTest()
-unit_test_obj.unit_test_entry()
+SHOW_LEVEL()
+INFO("Process start ...\n")
+#SET_LEVEL(LEVEL.ERROR)
+#SHOW_LEVEL()
+
+ut_obj = UnitTest()
+ut_obj.unit_test_entry()
 
 
 
