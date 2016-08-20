@@ -23,7 +23,7 @@ class Object():
 
 	def __init__(self):
 		self.name = "undefined"
-		self.items = {}
+		self.items = []
 		
 	def set_name(self, name):
 		self.name = name
@@ -40,7 +40,7 @@ class Object():
 class TestCase():
 
 	def __init__(self):
-		self.objects = {}
+		self.objects = []
 		
 	def set_objects(self, objects):
 		self.objects = objects
@@ -65,7 +65,7 @@ class TestCaseXml():
 
 			o = Object()
 			o.set_name(name)
-			tc.get_objects()[name] = o
+			tc.get_objects().append(o)
 			
 			items = object.getElementsByTagName("items")[0]
 			subitems = items.getElementsByTagName("item")
@@ -76,27 +76,23 @@ class TestCaseXml():
 				i = Item()
 				i.set_name(name)
 				i.set_path(path)
-				o.get_items()[name] = i
+				o.get_items().append(i)
 				
 		return tc
 
 	def show_test_cases(self):
 		INFO("show \n")
 		objects = self.tc.get_objects()
-		
-		for n,object in objects.items():		
-			INFO("o : " + n)
-			i = object.get_items()
-			
-			for n,item in i.items():
-				INFO("  n : " + item.get_name())
-				INFO("  p : " + item.get_path())
+		for o in objects:
+			INFO("o : " + o.get_name())
+			items = o.get_items()
+			for i in items:
+				INFO("  n : " + i.get_name())
+				INFO("  p : " + i.get_path())
 
-	def get_path(self, name_o, name_i):
-		objects = self.tc.get_objects()
-		items = objects[name_o].get_items()
-		item = items[name_i]
-		path = item.get_path()
+	def show_object():
+		pass
 
-		return path
+	def show_item():
+		pass
 
