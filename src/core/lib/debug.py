@@ -26,7 +26,7 @@ def INFO(text):
 	g_dbg.print_ln(LEVEL.INFO, text)
 	
 
-def WARN(text):
+def WARNING(text):
 	g_dbg.print_ln(LEVEL.WARNING, text)
 	
 def ERROR(text):

@@ -6,7 +6,7 @@ from model.test_case_xml import TestCaseXml
 
 class UT_TestCaseXml():  
 
-	def __init__(self):  
+	def __init__(self):
 		cur_path = os.path.split(os.path.realpath(__file__))[0]
 		self.xml = TestCaseXml(cur_path + '\ut_test_case.xml')
 		
