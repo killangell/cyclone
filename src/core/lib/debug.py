@@ -43,7 +43,7 @@ def GET_LEVEL():
 	
 def SHOW_LEVEL():
 	level = GET_LEVEL()
-	print ("Current level=%d"%(level))
+	print ("Current debug level=%d"%(level))
 	
 if __name__ == '__main__':
 	inst = Debug()

@@ -1,16 +1,3 @@
----- Debug Matches (15 in 7 files) ----
-Debug.py (core\lib):class Debug():  
-Debug.py (core\lib):		print ("Debug initial level=%d"%(self.level))
-Debug.py (core\lib):		print ("Debug initial level=%d"%(self.level))
-Debug.py (core\lib):	inst = Debug()
-Debug.py (core\lib):	inst.print_ln(LEVEL.INFO, "Debug test output")
-__init__.py (core):d = lib.debug.Debug(3)
-__init__.py (core):	inst = lib.debug.Debug(3)
-__init__.py (core):	inst.print_ln(LEVEL.INFO, "Class Debug test output")
-__init__.py (core\lib):d = Debug(3)
-__init__.py (core\lib):	inst = Debug(3)
-__init__.py (core\lib):	inst.print_ln(LEVEL.INFO, "Class Debug test output")
-Start.py:dbg = core.lib.debug.Debug(2)
-Test_case_xml.py (model):dbg = core.lib.debug.Debug(dbg_level)
-Unit_test.py (unit_test):dbg = core.lib.debug.Debug(2)
-Ut_test_case_xml.py (unit_test):dbg = core.lib.debug.Debug(dbg_level)
+---- ut_obj Matches (2 in 1 files) ----
+Start.py:ut_obj = UnitTestEntry()
+Start.py:ut_obj.test_all()

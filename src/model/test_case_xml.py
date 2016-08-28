@@ -81,10 +81,10 @@ class TestCaseXml():
 		return tc
 
 	def show_test_cases(self):
-		INFO("show \n")
+		INFO("show_test_cases")
 		objects = self.tc.get_objects()
 		
-		for n,object in objects.items():		
+		for n,object in objects.items():
 			INFO("o : " + n)
 			i = object.get_items()
 			
